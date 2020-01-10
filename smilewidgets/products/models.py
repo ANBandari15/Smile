@@ -27,5 +27,5 @@ class GiftCard(models.Model):
 class ProductPrice(models.Model):
 
     code = models.CharField(max_length=10, help_text='Internal facing reference to product')
-    date_start = models.DateField()
+    offer_date = models.DateField()
     price = models.PositiveIntegerField(help_text='Price of product in cents')

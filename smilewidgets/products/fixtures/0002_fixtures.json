@@ -5,52 +5,16 @@
     "fields": {
         "code": "big_widget",
         "price": 80000,
-        "date_start": "2019-11-23"
+        "offer_date": "2019-11-23"
     }
 },
 {
     "model": "products.productprice",
-    "pk": 1,
+    "pk": 2,
     "fields": {
         "code": "big_widget",
         "price": 80000,
-        "date_start": "2019-11-24"
-    }
-},
-{
-    "model": "products.productprice",
-    "pk": 1,
-    "fields": {
-        "code": "big_widget",
-        "price": 80000,
-        "date_start": "2019-11-25"
-    }
-},
-{
-    "model": "products.productprice",
-    "pk": 2,
-    "fields": {
-        "code": "sm_widget",
-        "price": 0,
-        "date_start": "2019-11-23"
-    }
-},
-{
-    "model": "products.productprice",
-    "pk": 2,
-    "fields": {
-        "code": "sm_widget",
-        "price": 0,
-        "date_start": "2019-11-24"
-    }
-},
-{
-    "model": "products.productprice",
-    "pk": 2,
-    "fields": {
-        "code": "sm_widget",
-        "price": 0,
-        "date_start": "2019-11-25"
+        "offer_date": "2019-11-24"
     }
 },
 {
@@ -58,8 +22,8 @@
     "pk": 3,
     "fields": {
         "code": "big_widget",
-        "price": 120000,
-        "date_start": "2019-01-01"
+        "price": 80000,
+        "offer_date": "2019-11-25"
     }
 },
 {
@@ -67,8 +31,44 @@
     "pk": 4,
     "fields": {
         "code": "sm_widget",
+        "price": 0,
+        "offer_date": "2019-11-23"
+    }
+},
+{
+    "model": "products.productprice",
+    "pk": 5,
+    "fields": {
+        "code": "sm_widget",
+        "price": 0,
+        "offer_date": "2019-11-24"
+    }
+},
+{
+    "model": "products.productprice",
+    "pk": 6,
+    "fields": {
+        "code": "sm_widget",
+        "price": 0,
+        "offer_date": "2019-11-25"
+    }
+},
+{
+    "model": "products.productprice",
+    "pk": 7,
+    "fields": {
+        "code": "big_widget",
+        "price": 120000,
+        "offer_date": "2019-01-01"
+    }
+},
+{
+    "model": "products.productprice",
+    "pk": 8,
+    "fields": {
+        "code": "sm_widget",
         "price": 12500,
-        "date_start": "2019-01-01"
+        "offer_date": "2019-01-01"
     }
 }
 ]
