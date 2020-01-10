@@ -5,8 +5,25 @@
     "fields": {
         "code": "big_widget",
         "price": 80000,
-        "date_start": "2019-11-23",
-        "date_end": "2019-11-25"
+        "date_start": "2019-11-23"
+    }
+},
+{
+    "model": "products.productprice",
+    "pk": 1,
+    "fields": {
+        "code": "big_widget",
+        "price": 80000,
+        "date_start": "2019-11-24"
+    }
+},
+{
+    "model": "products.productprice",
+    "pk": 1,
+    "fields": {
+        "code": "big_widget",
+        "price": 80000,
+        "date_start": "2019-11-25"
     }
 },
 {
@@ -15,8 +32,25 @@
     "fields": {
         "code": "sm_widget",
         "price": 0,
-        "date_start": "2019-11-23",
-        "date_end": "2019-11-25"
+        "date_start": "2019-11-23"
+    }
+},
+{
+    "model": "products.productprice",
+    "pk": 2,
+    "fields": {
+        "code": "sm_widget",
+        "price": 0,
+        "date_start": "2019-11-24"
+    }
+},
+{
+    "model": "products.productprice",
+    "pk": 2,
+    "fields": {
+        "code": "sm_widget",
+        "price": 0,
+        "date_start": "2019-11-25"
     }
 },
 {
@@ -25,8 +59,7 @@
     "fields": {
         "code": "big_widget",
         "price": 120000,
-        "date_start": "2019-01-01",
-        "date_end": null
+        "date_start": "2019-01-01"
     }
 },
 {
@@ -35,8 +68,7 @@
     "fields": {
         "code": "sm_widget",
         "price": 12500,
-        "date_start": "2019-01-01",
-        "date_end": null
+        "date_start": "2019-01-01"
     }
 }
 ]

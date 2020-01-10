@@ -28,5 +28,4 @@ class ProductPrice(models.Model):
 
     code = models.CharField(max_length=10, help_text='Internal facing reference to product')
     date_start = models.DateField()
-    date_end = models.DateField(blank=True, null=True)
     price = models.PositiveIntegerField(help_text='Price of product in cents')

@@ -16,14 +16,20 @@ class PriceCalculator(View):
         if request.GET["productCode"] != "":
             result["message"] = "date must be required"
             if request.GET["date"] != "":
-                result = self.productPrice(request.GET["productCode"], request.GET["date"], request.GET.get("giftCardCode", None))
+                result = self.product_price(request.GET["productCode"], request.GET["date"], request.GET.get("giftCardCode", None))
         return HttpResponse(dumps(result))
 
-    def productPrice(self, product_code, date, gift_card_code=None):
+    @staticmethod
+    def product_price(self, product_code, date, gift_card_code=None):
 
         result = {"status": "failed", "message": ""}
-        price = json.loads(dumps(ProductPrice.objects.filter(code=product_code, date_start=date)))
+        if gift_card_code:
+            price = GiftCard.objects.filter()
+        else:
+            print("jjjjj")
+            price = json.loads(dumps(ProductPrice.objects.filter(code=product_code, date_start=date).values("price")))
+            print("price", price)
         result["message"] = "price not found"
         if len(price) == 1:
-            result.update({"status": "success", "message": "product price", "result": price})
+            result.update({"status": "success", "message": "product price", "result": price[0]})
         return result
